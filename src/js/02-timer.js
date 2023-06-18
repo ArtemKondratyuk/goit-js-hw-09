@@ -50,6 +50,6 @@ const fp = flatpickr("#datetime-picker",{
     }
     
     function addLeadingZero(value){
-      return value.toString().padStart(2,'0');
+      return value.toString().padStart(3,'0');
     }
    
