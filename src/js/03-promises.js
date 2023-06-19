@@ -20,7 +20,7 @@ function onSubmitBtn(event) {
         );
       })
       .catch(({ position, delay }) => {
-        Notiflix.Notify.success(
+        Notiflix.Notify.failure(
           `❌ Rejected promise ${position} in ${delay}ms`
         );
       });
