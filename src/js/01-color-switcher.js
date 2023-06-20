@@ -18,6 +18,7 @@ btnStart.addEventListener('click', () => {
 });
 
 btnStop.addEventListener('click', () => {
+ clearInterval(intervalId);
   btnStart.disabled = false;
-  clearInterval(intervalId);
+  btnStop.disabled = true;  
 });
